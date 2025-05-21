@@ -7,7 +7,7 @@ function Header() {
     <div className="bg-white shadow-sm mb-5 position-relative">
       <div style={{ position: "absolute", top: 20, left: 20, zIndex: 10 }}>
         <img
-          src="src/assets/img/logo.png"
+          src="resources/images/logo.png"
           alt="Logo de la empresa"
           style={{ width: 100, height: 100, objectFit: "contain" }}
           loading="lazy"
