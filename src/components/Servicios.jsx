@@ -74,20 +74,9 @@ function Servicios() {
   <div className="container my-5">
     <h2 id="servicios" className="text-center mb-4">Catalogo de Servicios</h2>
     <section>
-      <div
-        className="row"
-        style={{
-          display: "flex",
-          flexWrap: "nowrap",
-          overflowX: "auto",
-          gap: "1rem"
-        }}
-      >
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         {posts.map((post) => (
-          <div
-            key={post.serviceID}
-            style={{ flex: "0 0 25%", maxWidth: "25%" }}
-          >
+          <div key={post.serviceID} className="col">
             <div className="card h-100 shadow-sm">
               <img
                 src={post.imagen}
@@ -103,7 +92,6 @@ function Servicios() {
                   <button
                     type="button"
                     className="btn btn-sm btn-outline-primary"
-                    style={{ whiteSpace: "nowrap" }}
                     onClick={() => comprar(post.serviceID)}
                   >
                     Agregar al carrito
