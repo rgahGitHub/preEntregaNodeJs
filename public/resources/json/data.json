@@ -1,0 +1,30 @@
+[
+  {
+    "serviceID": "1",
+    "nombre": "Servicio Basico",
+    "descripcion": "Consultoría básica para su empresa con visita de un profesional que evaluará sus necesidades para mejorar procesos tecnológicos.",
+    "precio": "$500",
+    "imagen": "resources/images/basico.avif"
+  },
+  {
+    "serviceID": "2",
+    "nombre": "Servicio Basico+",
+    "descripcion": "Incluye todo lo del básico más reuniones semanales para medir avances y mejoras del proyecto.",
+    "precio": "$800",
+    "imagen": "resources/images/basicoplus.avif"
+  },
+  {
+    "serviceID": "3",
+    "nombre": "Servicio Premium",
+    "descripcion": "Incluye básico+ y propuesta de negocio con reuniones interdiarias y un recurso presencial en su empresa.",
+    "precio": "$1000",
+    "imagen": "resources/images/premium.avif"
+  },
+  {
+    "serviceID": "4",
+    "nombre": "Servicio Premium+",
+    "descripcion": "Visita de 3 profesionales, desarrollo de propuesta y presencialidad diaria hasta finalizar el proyecto.",
+    "precio": "$1500",
+    "imagen": "resources/images/premiumplus.avif"
+  }
+]
