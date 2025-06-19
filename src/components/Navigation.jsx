@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import CarritoDialog from "./CarritoDialog";
+import CarritoDialogIndexDB from "./CarritoDialogIndexDB";
+
 import {
   FaShoppingCart,
   FaTools,
@@ -39,9 +41,9 @@ function Navigation() {
               <Nav.Link as={Link} to="/" className="d-flex align-items-center">
                 <FaHome className="me-2" /> Inicio
               </Nav.Link>
-              <Nav.Link as={Link} to="/servicios" className="d-flex align-items-center">
+              {/* <Nav.Link as={Link} to="/servicios" className="d-flex align-items-center">
                 <FaTools className="me-2" /> Servicios
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={Link} to="/productos" className="d-flex align-items-center">
                 <FaTools className="me-2" /> Productos
               </Nav.Link>
@@ -72,7 +74,8 @@ function Navigation() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <CarritoDialog ref={dialogRef} />
+      {/* <CarritoDialog ref={dialogRef} /> */}
+      <CarritoDialogIndexDB ref={dialogRef} />
     </>
   );
 }
