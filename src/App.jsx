@@ -12,15 +12,24 @@ import Administracion from './paginas/Administracion';
 import RutaProtegida from './components/RutaProtegida';
 import Contactanos from './components/Contactanos';
 import AdministrarProductos from './components/AdministrarProductos';
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 
 
 function App() {
 
+<ToastContainer position="top-right" autoClose={3000} hideProgressBar />
+
   return (
+    
     <BrowserRouter>
       <Header />
       <Navigation />
+      <Helmet>
+        <title>Mi Tienda en linea del curso de react</title>
+        <meta name="description" content="Bienvenido a Mi Tienda en Línea" />
+      </Helmet>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/login" element={<Login />} />
